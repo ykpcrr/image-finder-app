@@ -35,9 +35,11 @@ function search(e) {
     alert("İlk Önce Bize Ne Aramak İstediğini Yaz ");
   }
 
-  clear();
+  imageWrapper.innerHTML = "";
   e.preventDefault();
 }
+
+input.addEventListener("click", clear);
 
 function addUrlsToImage(url) {
   const div = document.createElement("div");
