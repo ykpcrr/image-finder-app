@@ -19,14 +19,13 @@ header{
 }
 
 header h1{
-  font-size: 3.5em;
+  font-size: 2.5em;
   font-weight: bold;
 }
 
 form {
   height: 40vh;
   width: 100vw;
-  padding: 50px;
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -36,12 +35,12 @@ form {
 
 form #input {
   height: 6vh;
-  width: 33vw;
+  width: 60vw;
 
-  background-color: black;
+  background-color: bisque;
   border-radius: 12px;
   
-  color: #ffffff;
+  color: #000;
   border-color: aliceblue;
   text-align: center;
   font-weight: bold;
@@ -49,16 +48,16 @@ form #input {
 }
 
 ::placeholder { /* Chrome, Firefox, Opera, Safari 10.1+ */
-  color: rgb(255, 255, 255);
+  color: rgb(0, 0, 0);
   opacity: 1; /* Firefox */
 }
 
 :-ms-input-placeholder { /* Internet Explorer 10-11 */
-  color: rgb(255, 255, 255);
+  color: rgb(0, 0, 0);
 }
 
 ::-ms-input-placeholder { /* Microsoft Edge */
-  color: rgb(255, 255, 255);
+  color: rgb(0, 0, 0);
 }
 
 form #btn-wrapper {
@@ -68,10 +67,15 @@ form #btn-wrapper {
 form #btn-wrapper button {
   margin: 20px;
   height: 5vh;
-  width: 30vw !important;
+  width: 15vw !important;
   max-width: 400px;
   border-radius: 10px;
   border: 0;
+
+  display: flex;
+  text-align: center;
+  justify-content: center;
+  align-items: center;
 
   background-color: #fff000;
   border-radius: 12px;
@@ -116,7 +120,10 @@ form #btn-wrapper #searchbtn {
 }
 
 img{
-  padding: 2px;
+  padding: 15px;
+  margin: 25px;
+  border: 1px solid gray;
+  box-shadow: 3px 5px 8px gray;
 }
 
 @media only screen and (max-width: 600px) {
@@ -125,6 +132,6 @@ img{
   }
 
   header h1{
-    font-size: 2.5em;
+    font-size: 1.5em;
   }
 }

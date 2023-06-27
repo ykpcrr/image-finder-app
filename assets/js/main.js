@@ -14,9 +14,6 @@ function runEventListenners() {
 
 function search(e) {
   let value = input.value.trim();
-  if (value == "nazz" || value == "taha") {
-    value = "ape";
-  }
   if (value.length > 0) {
     fetch(`https://api.unsplash.com/search/photos?query=${value}`, {
       method: "GET",
@@ -45,7 +42,7 @@ function addUrlsToImage(url) {
   const div = document.createElement("div");
   const img = document.createElement("img");
   img.src = url;
-  img.height = img.width = 300;
+  img.height = img.width = 400;
   div.appendChild(img);
   imageWrapper.appendChild(div);
 }
